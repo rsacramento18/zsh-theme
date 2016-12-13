@@ -13,10 +13,10 @@ function check_git_prompt_info() {
 %{$fg[yellow]%}➝ "
         else
             echo "$(git_prompt_info) $(git_prompt_status)
-%{$fg_bold[cyan]%}➝ "
+%{$fg[cyan]%}➝ "
         fi
     else
-        echo "%{$fg_bold[cyan]%}→ "
+        echo "%{$fg[cyan]%}➝ "
     fi
 }
 
