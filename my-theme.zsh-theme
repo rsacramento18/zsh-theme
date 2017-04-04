@@ -10,7 +10,7 @@ function check_git_prompt_info() {
     if git rev-parse --git-dir > /dev/null 2>&1; then
         if [[ -z $(git_prompt_info) ]]; then
             echo "%{$fg[blue]%}detached-head%{$reset_color%}) $(git_prompt_status)
-%{$fg[yellow]%}➝ "
+%{$fg[red]%}➝ "
         else
             echo "$(git_prompt_info) $(git_prompt_status)
 %{$fg[cyan]%}➝ "
